@@ -10,9 +10,9 @@ public class Persona {
 
 	}
 
-	public Persona(String nom, String apelli, int age) {
-		nombre = nom;
-		apellidos = apelli;
-		edad = age;
+	public Persona(String nombre, String apellidos, int edad) {
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.edad = edad;
 	}
 }
