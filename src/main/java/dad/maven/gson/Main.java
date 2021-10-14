@@ -14,13 +14,13 @@ public class Main {
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.println("Introduce tu nombre: ");
-		p.nombre = scanner.nextLine();
+		p.setNombre(scanner.nextLine());
 
 		System.out.println("Introduce tu apellido: ");
-		p.apellidos = scanner.nextLine();
+		p.setApellidos(scanner.nextLine());
 
 		System.out.println("Introduce tu edad: ");
-		p.edad = scanner.nextInt();
+		p.setEdad(scanner.nextInt());
 
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		String json = gson.toJson(p);
